@@ -3,7 +3,7 @@ function createTask(title, priority = "medium") {
   if (typeof title !== "string" || title.trim() === "") {
     throw new Error("Title is required");
   }
-  const allowed = ["low", "medium", "hi"];
+  const allowed = ["low", "medium", "high"];
   if (!allowed.includes(priority)) {
     throw new Error("Priority must be low, medium, or high");
   }
